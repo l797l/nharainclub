@@ -1,0 +1,61 @@
+.events-card {
+  display: flex;
+  flex-direction: row;
+  gap: 5%;
+  direction: rtl;
+  margin: 0 11% 0 0;
+  height: 100%;
+  padding:  2%;
+  width: 70%;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+  
+}
+.events-card:hover{
+    border-right: 3px solid var(--main-color);
+    transform: translateX(2.4px);
+  background: linear-gradient(to bottom, #f5f7f8, #ebeff2);
+
+}
+
+.events-card .card-num {
+  font-size: 35px;
+  font-weight: 200;
+  color: var(--hover-color);
+  background-color: var(--main-color);
+  padding: 5px 15px;
+  border-radius: 10px;
+}
+
+.events-card .card-month {
+  font-size: 25px;
+  font-weight: 500;
+  border-radius: 10px;
+  color: #57585b;
+  text-align: center;
+}
+
+.card-title {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-title h2 {
+  color: var(--grin-color);
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.card-title data {
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--grin-color);
+}
+
+.card-title p {
+  font-size: 17px;
+  font-weight: 500;
+  border-radius: 10px;
+  color: #57585b;
+  margin-top: 2%;
+}

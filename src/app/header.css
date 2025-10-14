@@ -1,0 +1,94 @@
+.header {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  position: fixed;
+  z-index: 1000;
+  border-top: 1px solid var(--hover-color);
+  left: 0;
+  top: 0;
+  height: 80px;
+  margin: 0;
+}
+
+.header-top {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--main-color);
+  padding: 10px 20px;
+  height: 40px; 
+  gap: 35px;
+}
+
+.header-top div {
+  height: 30px; 
+  display: flex;
+  gap: 20px;
+  margin: 0 50px;
+  align-items: center;
+}
+
+.header-top p {
+  color: white;
+  text-align: center;
+  height: auto; 
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 0.8s ease;
+  margin: 0; 
+  line-height: 1;
+}
+
+.header-bottom {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 35px;
+  background-color: var(--main-color);
+  padding: 10px 0;
+  height: 70px; 
+  transition: all 0.8s ease;
+}
+
+.header-bottom.transparent {
+  background-color: transparent;
+}
+
+.header-bottom.transparent p {
+  color: #fff;
+}
+
+.header-bottom:not(.transparent) {
+  background-color: #fff;
+}
+
+.header-bottom:not(.transparent) p {
+  color: #000;
+}
+
+.header-bottom img {
+  width: 50px; 
+  height: 50px; 
+  object-fit: contain; 
+}
+
+.header-bottom p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.8s ease;
+  width: auto; 
+  height: auto; 
+  padding: 5px 10px; 
+  font-size: 14px; 
+  margin: 0; 
+}
+
+.header-bottom p:hover,
+.header-top p:hover {
+  color: var(--hover-color);
+}

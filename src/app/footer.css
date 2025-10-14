@@ -1,0 +1,42 @@
+.footer {
+  display: flex;
+  background-color: var(--main-color);
+  justify-content: space-between;
+  flex-direction: row;
+  direction: rtl;
+  border-bottom: 3px solid var(--hover-color);
+}
+
+.footer-title {
+  display: flex;
+  flex-direction: column;
+  margin: 2% 10%;
+
+}
+
+.footer-title h1 {
+  color: var(--hover-color);
+  font-size: 25px;
+  margin-bottom: 3%;
+}
+
+.footer-title p {
+  color: white;
+  margin-bottom: 3%;
+}
+
+.footer-about {
+  display: flex;
+  flex-direction: row;
+  gap: 3%;
+  justify-content: center;
+  align-items: center;
+  margin: 2% 10%;
+}
+
+.footer-about p {
+  color: white;
+  width: 100%;
+  min-width: 100px;
+  cursor: pointer;
+}

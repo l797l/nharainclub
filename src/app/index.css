@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@300;400;500;600;700;800&display=swap');
+:root {
+  --main-color: #000631;
+  --second-color: #e6cfa7;
+  --hover-color: #ffbf00;
+  --balck-color: #000000;
+  --grin-color: #015258;
+  
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Tajawal;
+  font-weight: 600;
+}

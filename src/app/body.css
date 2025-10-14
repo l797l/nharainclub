@@ -1,0 +1,158 @@
+.body-container {
+  width: 100%;
+  overflow: hidden;
+
+  margin-top: 10px;
+}
+
+.main-body {
+  display: block;
+  height: 100vh;
+}
+
+.body-image {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.body-overlay {
+  position: absolute;
+  top: 2%;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #00063167;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.body-overlay h3,
+.body-overlay h2 {
+  color: #fff;
+  font-size: 35px;
+  margin: 0;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+}
+
+.about-club {
+  display: flex;
+  flex-direction: row;
+  gap: 5%;
+  background-color: var(--main-color);
+  width: 100%;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 20px;
+  border-top: 1px solid var(--hover-color);
+}
+
+.about-club img {
+  height: 300px;
+  width: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 2px var(--hover-color) solid;
+}
+
+.about-content {
+  max-width: 500px;
+  height: auto;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-content h4 {
+  font-size: 28px;
+  color: var(--hover-color);
+  height: 25%;
+  margin-top: 5%;
+}
+
+.about-content p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #fff;
+  height: 75%;
+  margin-top: 3%;
+  margin-bottom: 10%;
+}
+
+.box-news {
+  background: linear-gradient(to bottom, #f5f7f8, #ebeff2);
+  width: 100%;
+  padding: 90px 0;
+  text-align: center;
+}
+
+.title-news p,
+.title-events p {
+  font-size: 36px;
+  font-weight: 800;
+  margin-bottom: 60px;
+  color: #222;
+  position: relative;
+  display: inline-block;
+}
+
+.title-news span,
+.title-events span {
+  color: #4caf50;
+  border-bottom: 5px solid #4caf50;
+}
+
+.set-news {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 40px;
+  justify-content: center;
+  align-items: stretch;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.events{
+  padding-bottom: 3%;
+}
+.title-events  {
+  margin: 2% 10% -5px 0;
+direction: rtl;}
+
+.title-events p{
+  font-size: 25px;
+}
+
+.events .events-body{
+  display: flex;
+  flex-direction: row;
+  direction: rtl;
+}
+
+.events .events-body .events-cards{
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+
+.events .events-body .events-img{
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.events-img img {
+  height: 60%;
+  width: 80%;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 2px var(--main-color) solid;
+}
+
