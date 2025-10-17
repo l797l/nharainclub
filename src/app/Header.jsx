@@ -1,7 +1,7 @@
-"use client"
+"use client";
 import "./header.css";
+import Link from "next/link";
 import { useState, useEffect } from "react";
-
 
 export default function Header() {
   const IconClub = "/Img/iconClub.PNG";
@@ -10,20 +10,23 @@ export default function Header() {
 
   const topItems = ["English"];
   const topRightItems = ["Hime", "Hime", "Hime", "Hime"];
+
   const bottomItems = [
-    "Hime", "الصور", "الارشيف", "تبرع الان", "اهدافنا", "من نحن", "الرئيسية"
+    { id: 1, title: "الرئيسية", slug: "" },
+    { id: 2, title: "من نحن", slug: "Aboutus" },
+    { id: 3, title: "اهدافنا", slug: "Goals" },
+    { id: 4, title: "الارشيف", slug: "" },
+    { id: 5, title: "الصور", slug: "" },
   ];
 
   useEffect(() => {
     const updateHeight = () => setPageHeight(window.scrollY);
-    
     updateHeight();
     window.addEventListener("scroll", updateHeight);
-    
     return () => window.removeEventListener("scroll", updateHeight);
   }, []);
 
-  const renderItems = (items) => 
+  const renderItems = (items) =>
     items.map((text, index) => <p key={index}>{text}</p>);
 
   return (
@@ -32,9 +35,13 @@ export default function Header() {
         <div>{renderItems(topItems)}</div>
         <div>{renderItems(topRightItems)}</div>
       </div>
-      
-      <div className={`header-bottom ${isTransparent ? 'transparent' : ''}`}>
-        {renderItems(bottomItems)}
+
+      <div className={`header-bottom ${isTransparent ? "transparent" : ""}`}>
+        {bottomItems.map((item) => (
+          <Link key={item.id} href={`/${item.slug}`}>
+            <p   >{item.title}</p>
+          </Link>
+        ))}
         <img src={IconClub} alt="Club Icon" />
       </div>
     </div>

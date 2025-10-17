@@ -1,3 +1,8 @@
+*{
+  text-decoration: none;
+}
+
+
 .header {
   display: flex;
   width: 100%;
@@ -50,6 +55,7 @@
   background-color: var(--main-color);
   padding: 10px 0;
   height: 70px; 
+  direction: rtl;
   transition: all 0.8s ease;
 }
 
@@ -75,7 +81,7 @@
   object-fit: contain; 
 }
 
-.header-bottom p {
+.header-bottom p{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -91,4 +97,19 @@
 .header-bottom p:hover,
 .header-top p:hover {
   color: var(--hover-color);
+}
+
+
+
+@media (max-width: 1000px) {
+.header-top{
+  display: none;
+}
+.header-bottom p{
+  display: none;
+}
+.header-bottom {
+  justify-content: space-between;
+}
+
 }

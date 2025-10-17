@@ -117,35 +117,35 @@
   max-width: 1200px;
   margin: 0 auto;
 }
-.events{
+.events {
   padding-bottom: 3%;
 }
-.title-events  {
+.title-events {
   margin: 2% 10% -5px 0;
-direction: rtl;}
+  direction: rtl;
+}
 
-.title-events p{
+.title-events p {
   font-size: 25px;
 }
 
-.events .events-body{
+.events .events-body {
   display: flex;
   flex-direction: row;
   direction: rtl;
 }
 
-.events .events-body .events-cards{
+.events .events-body .events-cards {
   width: 60%;
   display: flex;
   flex-direction: column;
 }
 
-.events .events-body .events-img{
+.events .events-body .events-img {
   width: 40%;
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
 
 .events-img img {
@@ -156,3 +156,28 @@ direction: rtl;}
   border: 2px var(--main-color) solid;
 }
 
+@media (max-width: 1000px) {
+  .body-overlay {
+    top: 0;
+    height: 120vh;
+  }
+  .about-club {
+    flex-direction: column;
+  }
+  .about-club .about-content {
+    order: 1;
+  }
+
+  .about-club img {
+    order: 2;
+    width: 60%;
+    height: 400px;
+  }
+
+  .events .events-body .events-cards {
+    width: 80%;
+  }
+  .events .events-body .events-img {
+    display: none;
+  }
+}
