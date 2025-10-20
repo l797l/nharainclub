@@ -26,7 +26,7 @@ export default function Home() {
           </p>
         </div>
         <div className="about-img">
-          <img src={imgAbout}/>
+          <img src={imgAbout} alt="img"/>
         </div>
       </div>
     </div>

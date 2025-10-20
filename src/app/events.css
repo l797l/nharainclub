@@ -59,3 +59,20 @@
   color: #57585b;
   margin-top: 2%;
 }
+
+@media (max-width: 1000px) {
+  .events-card {
+  display: flex;
+  flex-direction: row;
+  gap: 5%;
+  direction: rtl;
+  margin: 0 0.5% 0 ;
+  height: 100%;
+  padding:  0% 3% 3% 0%;
+  width: 90%;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+  
+}
+
+}

@@ -157,18 +157,24 @@
 }
 
 @media (max-width: 1000px) {
+  .body-container {
+  margin-top: 0px;
+}
   .body-overlay {
     top: 0;
-    height: 120vh;
+    height: 100vh;
   }
   .about-club {
   padding: 50px 5px;
     gap: 1%;
+    flex-direction: column;
 
   }
   
   .about-content {
   max-width: 300PX;
+  
+  
   }
  
   .about-content h4 {
@@ -188,7 +194,7 @@
 }
 
   .about-club img {
-   display: none;
+    width: 80%;
   }
 
   .events .events-body .events-cards {
