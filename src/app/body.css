@@ -162,20 +162,37 @@
     height: 120vh;
   }
   .about-club {
-    flex-direction: column;
+  padding: 50px 5px;
+    gap: 1%;
+
   }
-  .about-club .about-content {
-    order: 1;
+  
+  .about-content {
+  max-width: 300PX;
   }
+ 
+  .about-content h4 {
+  font-size: 22px;
+  color: var(--hover-color);
+  height: 25%;
+  margin-top: 5%;
+}
+
+.about-content p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #fff;
+  height: 75%;
+  margin-top: 3%;
+  margin-bottom: 10%;
+}
 
   .about-club img {
-    order: 2;
-    width: 60%;
-    height: 400px;
+   display: none;
   }
 
   .events .events-body .events-cards {
-    width: 80%;
+    width: 100%;
   }
   .events .events-body .events-img {
     display: none;

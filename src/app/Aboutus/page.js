@@ -1,35 +1,33 @@
+
+import "./About.css"
 export default function Home() {
+
+    const imgAbout = "/Img/IMG_0152.JPG";
+
   return (
     <div>
-      <div
-        style={{
-          background: "var(--main-color)",
-          margin: "50px 0",
-          padding: "175px 0 25px 0",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-        }}
+      <div className="about-title"
       >
-        <h1 style={{ color: "wheat" }}>من نحن</h1>
+        <h2 >من نحن</h2>
       </div>
-      <div>
-        <h1 style={{ color: "wheat" }}>من نحن</h1>
-        <h1 style={{ color: "wheat" }}>من نحن</h1>
-        <h1 style={{ color: "wheat" }}>من نحن</h1>
-        <h1 style={{ color: "wheat" }}>من نحن</h1>
-        <h1 style={{ color: "wheat" }}>من نحن</h1>
-        <h1 style={{ color: "wheat" }}>من نحن</h1>
-        <h1 style={{ color: "wheat" }}>من نحن</h1>
-        <h1 style={{ color: "wheat" }}>من نحن</h1>
-        <h1 style={{ color: "wheat" }}>من نحن</h1>
-        <h1 style={{ color: "wheat" }}>من نحن</h1>
-        <h1 style={{ color: "wheat" }}>من نحن</h1>
-        <h1 style={{ color: "wheat" }}>من نحن</h1>
-        <h1 style={{ color: "wheat" }}>من نحن</h1>
-        <h1 style={{ color: "wheat" }}>من نحن</h1>
-        <h1 style={{ color: "wheat" }}>من نحن</h1>
-        <h1 style={{ color: "wheat" }}>من نحن</h1>
+      <div className="about-body">
+        <div className="about-text">
+          <h3>نحن</h3>
+          <p>
+            {" "}
+            نحن مجموعة من طلاب علوم النهرين اجتمعنا تحت اسم نادي النهرين
+            الشبابي الطلابي بهدف خلق بيئة تفاعلية تجمع بين التعلم، الإبداع،
+            والعمل الجماعي. نسعى من خلال أنشطتنا إلى تنمية مهارات الطلبة، وتبادل
+            المعرفة، وتشجيع روح المبادرة والابتكار داخل الجامعة. يعمل النادي على
+            تنظيم ورش عمل، فعاليات، مسابقات، ومحاضرات تهدف إلى تطوير قدرات
+            الطلبة الأكاديمية والشخصية، وفتح آفاق جديدة أمامهم في مجالات تطوع
+            والتوعيه. نؤمن بأن الطالب هو محور التغيير، وأن الأفكار الصغيرة يمكن
+            أن تصنع فرقًا كبيرًا عندما تُنفذ بشغف وتعاون
+          </p>
+        </div>
+        <div className="about-img">
+          <img src={imgAbout}/>
+        </div>
       </div>
     </div>
   );

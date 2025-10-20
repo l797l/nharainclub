@@ -1,4 +1,5 @@
 "use client";
+import { FaFacebookF, FaTiktok, FaTwitter,FaYoutube,FaInstagram, FaEnvelope} from "react-icons/fa";
 import "./header.css";
 import Link from "next/link";
 import { useState, useEffect } from "react";
@@ -9,7 +10,6 @@ export default function Header() {
   const isTransparent = pageHeight <= 130;
 
   const topItems = ["English"];
-  const topRightItems = ["Hime", "Hime", "Hime", "Hime"];
 
   const bottomItems = [
     { id: 1, title: "الرئيسية", slug: "" },
@@ -33,13 +33,45 @@ export default function Header() {
     <div className="header">
       <div className="header-top">
         <div>{renderItems(topItems)}</div>
-        <div>{renderItems(topRightItems)}</div>
+        <div>
+          <FaFacebookF
+            size={15}
+            color="#fff"
+            style={{ transition: "transform 0.2s", cursor: "pointer" }}
+          />
+          <FaTiktok
+            size={15}
+            color="#fff"
+            style={{ transition: "transform 0.2s", cursor: "pointer" }}
+          />
+          <FaTwitter
+            size={15}
+            color="#fff"
+            style={{ transition: "transform 0.2s", cursor: "pointer" }}
+          />
+           <FaYoutube
+            size={15}
+            color="#fff"
+            style={{ transition: "transform 0.2s", cursor: "pointer" }}
+          />
+           <FaInstagram
+            size={15}
+            color="#fff"
+            style={{ transition: "transform 0.2s", cursor: "pointer" }}
+          />
+           <FaEnvelope
+            size={15}
+            color="#fff"
+            style={{ transition: "transform 0.2s", cursor: "pointer" }}
+          />
+          
+        </div>
       </div>
 
       <div className={`header-bottom ${isTransparent ? "transparent" : ""}`}>
         {bottomItems.map((item) => (
           <Link key={item.id} href={`/${item.slug}`}>
-            <p   >{item.title}</p>
+            <p>{item.title}</p>
           </Link>
         ))}
         <img src={IconClub} alt="Club Icon" />

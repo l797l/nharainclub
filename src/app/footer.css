@@ -45,9 +45,6 @@
     flex-direction: column;
   }
   .footer-about {
-      margin: 2% 2%;
-        gap: 1%;
-
-
+    display: none;
   }
 }
