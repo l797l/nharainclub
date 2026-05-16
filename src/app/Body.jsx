@@ -9,6 +9,7 @@ export default function Body() {
   const imgAbout = "/Img/IMG_4283.JPG";
 
   return (
+    
     <div className="body-container">
       {/* القسم الاول - صورة مقدمة */}
       <div className="main-body">
@@ -61,9 +62,10 @@ export default function Body() {
             excerpt="انضم إلينا في ورشة العمل الحصرية التي تتناول أحدث التطورات في مجال الذكاء الاصطناعي وتطبيقاته العملية في سوق العمل."
             date="2024/12/15"
             category="الاخبار"
-            views="1.2K"
-            isNew={true}
+            views="200"
+            isNew={false}
           />
+          
           <NewsCard
             image={imgBody}
             title="ورشة العمل القادمة في مجال الذكاء الاصطناعي"
