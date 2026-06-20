@@ -1,23 +1,21 @@
-
-import "./About.css"
+import Image from "next/image";
+import "./About.css";
 export default function Home() {
-
-    const imgAbout = "/Img/IMG_0152.JPG";
+  const imgAbout = "/Img/IMG_0152.JPG";
 
   return (
     <div>
-      <div className="about-title"
-      >
-        <h2 >من نحن</h2>
+      <div className="about-title">
+        <h2>من نحن</h2>
       </div>
       <div className="about-body">
         <div className="about-text">
           <h3>نحن</h3>
           <p>
             {" "}
-            نحن مجموعة من طلاب علوم النهرين اجتمعنا تحت اسم نادي النهرين
-            الشبابي الطلابي بهدف خلق بيئة تفاعلية تجمع بين التعلم، الإبداع،
-            والعمل الجماعي. نسعى من خلال أنشطتنا إلى تنمية مهارات الطلبة، وتبادل
+            نحن مجموعة من طلاب علوم النهرين اجتمعنا تحت اسم نادي النهرين الشبابي
+            الطلابي بهدف خلق بيئة تفاعلية تجمع بين التعلم، الإبداع، والعمل
+            الجماعي. نسعى من خلال أنشطتنا إلى تنمية مهارات الطلبة، وتبادل
             المعرفة، وتشجيع روح المبادرة والابتكار داخل الجامعة. يعمل النادي على
             تنظيم ورش عمل، فعاليات، مسابقات، ومحاضرات تهدف إلى تطوير قدرات
             الطلبة الأكاديمية والشخصية، وفتح آفاق جديدة أمامهم في مجالات تطوع
@@ -26,7 +24,13 @@ export default function Home() {
           </p>
         </div>
         <div className="about-img">
-          <img src={imgAbout} alt="img"/>
+          <Image
+            src={imgAbout}
+            alt="img"
+            width={500}
+            height={300}
+            className="about-image"
+          />{" "}
         </div>
       </div>
     </div>
